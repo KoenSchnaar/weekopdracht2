@@ -1,0 +1,25 @@
+.cell{
+    /* background-color: grey; */
+    outline: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+tr.row.coordinateLabels, td.cell.coordinateLabels{
+    background-color: red;
+    color: yellow;
+}
+
+.speelveldcellen:hover{
+    background-color: darkblue;
+}
+
+#coordinateLabels{
+    /* color: red; */
+    background-color: yellow;
+} 
+
+.speelveldcellen{
+    background-color: blue;
+}
+
