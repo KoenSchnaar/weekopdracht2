@@ -1,3 +1,28 @@
+var locatie = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 3, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 3, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
+
+function bootPlaatsen(){
+    for(x = 0; x < 10; x++){
+        for(y = 0; y < 10; y++){
+            if(locatie[y][x] == 3){
+                alert("hoi");
+            }
+        }
+    }
+    console.log(locatie);
+}
+
+
+
+
 function maaktabel(){
     var width = 11;
     var height = 11;
@@ -44,11 +69,6 @@ var patrouilleschip2 = new Boot(2, "patrouilleschip");
 var patrouilleschip3 = new Boot(2, "patrouilleschip");
 var patrouilleschip4 = new Boot(2, "patrouilleschip");
 
-console.log(Boot);
-
-function bootPlaatsen(){
-
-}
 
 function bomGooien(){
     alert(vliegdekschip.naam);
@@ -80,16 +100,26 @@ function addClassesSpeelveldCellen(){
     var rijen = document.getElementsByClassName("row"); // maakt een array van de rijen "row"
     for(x = 1;x<rijen.length;x++){
         var childnodestest = rijen[x].childNodes; // maakt een array van cellen uit de rij die hieronder allemaal de class 'speelveldcellen' krijgen.
-            // for(x=1;x<11;x++){
+        // for(x=1;x<11;x++){
         childnodestest[1].classList.add("speelveldcellen"); // lukt niet om in for te zetten???????????????????????????????
+        childnodestest[1].setAttribute("id", (x));
         childnodestest[2].classList.add("speelveldcellen");
+        childnodestest[2].setAttribute("id", (10+x));
         childnodestest[3].classList.add("speelveldcellen");
+        childnodestest[3].setAttribute("id", (20+x));
         childnodestest[4].classList.add("speelveldcellen");
+        childnodestest[4].setAttribute("id", (30+x));
         childnodestest[5].classList.add("speelveldcellen");
+        childnodestest[5].setAttribute("id", (40+x));
         childnodestest[6].classList.add("speelveldcellen");
+        childnodestest[6].setAttribute("id", (50+x));
         childnodestest[7].classList.add("speelveldcellen");
+        childnodestest[7].setAttribute("id", (60+x));
         childnodestest[8].classList.add("speelveldcellen");
+        childnodestest[8].setAttribute("id", (70+x));
         childnodestest[9].classList.add("speelveldcellen");
+        childnodestest[9].setAttribute("id", (80+x));
         childnodestest[10].classList.add("speelveldcellen");
+        childnodestest[10].setAttribute("id", (90+x));
     }
 }
