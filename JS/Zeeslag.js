@@ -2,7 +2,7 @@ var locatie = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-               [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+               [0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -86,6 +86,7 @@ var patrouilleschip4 = new Boot(2, "patrouilleschip");
 
 function bomGooien(){
     alert(vliegdekschip.naam);
+    alert(this.id);
 }
 
 
@@ -116,7 +117,7 @@ function addClassesSpeelveldCellen(){
         for(y = 1; y < 11; y++){
         var childnodestest = rijen[x].childNodes[y]; // maakt een array van cellen uit de rij die hieronder allemaal de class 'speelveldcellen' krijgen.
         childnodestest.classList.add("speelveldcellen");
-        childnodestest.setAttribute("id", (x*10+y));
+        childnodestest.setAttribute("id", ((x-1)*10+y));
         console.log(childnodestest);
         }
 
