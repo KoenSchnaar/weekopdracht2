@@ -20,6 +20,14 @@ tr.row.coordinateLabels, td.cell.coordinateLabels{
 } 
 
 .speelveldcellen{
+    background-color: lightgray;
+}
+
+.geraakt{
+    background-color: red;
+}
+
+.gemist{
     background-color: blue;
 }
 

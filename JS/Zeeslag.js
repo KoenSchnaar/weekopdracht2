@@ -10,9 +10,15 @@ var locatie = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]];
 
 
-function bootPlaatsen(x, y){
+function bootPlaatsen(){
+    var x = Math.floor(Math.random()*10);
+    var y = Math.floor(Math.random()*10);
+    console.log(x);
+    console.log(y);
+
     locatie[x][y] = 1;
 }
+
 
 function bootPlaatsen1(){
     for(x = 0; x < 10; x++){
